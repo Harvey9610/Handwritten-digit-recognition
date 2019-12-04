@@ -49,7 +49,6 @@ def train(epoch, model, train_loader, criterion, optimizer):
     total_loss = 0
     correct = 0
     for _, (images, labels) in enumerate(train_loader, start=1):
-        print('Epochs: [%d/%d]' % (epoch, epochs))
         images = images.to(device)
         labels = labels.to(device)
 
